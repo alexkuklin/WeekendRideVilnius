@@ -63,7 +63,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll (< 4)
+  jekyll
   jekyll-archives
   jekyll-paginate-v2
   jekyll-sitemap
