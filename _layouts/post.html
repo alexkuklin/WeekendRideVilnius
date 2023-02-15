@@ -36,7 +36,10 @@ layout: default
 <!-- gallery -->
 <ul class="photo-gallery">
   {% for image in page.images %}
-    <li><img src="{{ site.baseurl }}/{{ image.image }}" alt="{{ image.title}}"/>{{ image.title }}</li>
+    <li>
+	    {{ image.title }}
+	    <img src="{{ site.baseurl }}/{{ image.image }}" alt="{{ image.title}}"/>
+    </li>
   {% endfor %}
 </ul>
 
