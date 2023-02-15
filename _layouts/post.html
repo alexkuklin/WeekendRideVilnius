@@ -33,6 +33,16 @@ layout: default
   {{ content }}
 </article>
 
+<!-- gallery -->
+<ul class="photo-gallery">
+  {% for image in page.images %}
+    <li><img src="/{{ image.image }}" alt="{{ image.title}}"/>{{ image.title }}</li>
+  {% endfor %}
+</ul>
+
+{% include my-gallery.html folder="myfolder" %}
+<!-- /gallery -->
+
 {% if site.jekyll-archives %}
 {% if page.tags.size > 0 %}
 <section class="tags">
